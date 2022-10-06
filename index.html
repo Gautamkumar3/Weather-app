@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+     <div id="input">
+       <div class="sea">
+        <input type="text" id="city">
+        <button onclick="getData()">Search</button>
+       </div>
+
+     </div>
+
+
+
+    <div class="mapouter">
+      <div class="gmap_canvas">
+          <iframe
+           width="600" 
+           height="500" 
+           id="gmap_canvas"
+           frameborder="0"
+           scrolling="no" 
+           marginheight="0"
+           marginwidth="0"
+         ></iframe>
+        </div>
+    </div>
+
+
+    <video controls loop autoplay muted  playsinline style="pointer-events: none;" id="video">
+        <source src="https://s3.amazonaws.com/ui8-images/uploads/video/product-page-7_1617136047474.mp4" type="video/mp4">
+      </video>
+
+  
+
+        <div id="header">
+            <div class="show_temp">
+               <h1 id="today"></h1>
+               <p id="name"></p>
+               <h2>Min:- <span id="min"></span></h2>
+               <h2>Max:- <span id="max"></span></h2>
+            </div>
+            
+            <div class="details">
+                <p>Humadity:- <span id="hum"></span></p>
+                <p>Wind :- <span id="wind"></span></p>
+                 <p>Visibility :- <span id="gautam"></span></p>
+                <p>Pressure:- <span id="pre"></span></p>
+                <p>Desc:- <span id="desc"></span></p>
+              
+   
+            </div>
+       </div>
+
+   
+      <div id="container">
+          <div class="sun">
+              <div>
+                <h3>Sunday</h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+              </div>
+
+              <div class="temp1">
+
+                </div>
+          </div>
+          <div class="sun">
+              <div>
+                <h3>Monday</h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+              </div>
+
+              <div class="temp2">
+
+                </div>
+          </div>
+          <div class="sun">
+              <div>
+                <h3>Tuesday</h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+              </div>
+
+              <div class="temp3">
+ 
+                </div>
+          </div>
+          <div class="sun">
+              <div>
+                <h3>Wednesday</h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+              </div>
+
+              <div class="temp4">
+  
+                </div>
+          </div>
+          <div class="sun">
+              <div>
+                <h3>Thrusday</h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+              </div>
+
+              <div class="temp5">
+      
+                </div>
+          </div>
+          <div class="sun">
+              <div>
+                <h3>Friday</h3>
+                <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+              </div>
+
+              <div class="temp6">
+    
+             </div>
+          </div>
+ 
+      </div>
+
+</body>
+</html>
+<script src="index.js"></script>
